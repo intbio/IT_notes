@@ -18,10 +18,10 @@ Then `subl .` will do what we want.
    - `conda create --name myenv`
    - `source activate myenv`
    - `conda install ...`
-   - `conda list --explicit > env.txt`
-   - `conda install --file=env.txt`
+   - `conda list --export > env.txt`
+   - `conda install --file env.txt`
    - `source deactivate`
-+ Do not forget to save a file with all your dependencies in the repo `conda list --explicit > env.txt`
++ Do not forget to save a file with all your dependencies in the repo `conda list --export > env.txt`
 + Now the tricky part:
    - Tools -> Build or Command+B will execute your Python script, but how to specify what Python Env it uses?
    - By default, Sublime will use the python interpreter that is in your PATH (see `which python`)
