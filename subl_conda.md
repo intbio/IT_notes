@@ -17,6 +17,7 @@ Then `subl .` will do what we want.
    - `conda env list`
    - `conda create --name myenv`
    - `source activate myenv`
+   - `conda search ...`
    - `conda install ...`
    - `conda list --export > env.txt`
    - `conda install --file env.txt`
