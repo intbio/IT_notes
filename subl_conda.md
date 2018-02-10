@@ -29,7 +29,7 @@ Then `subl .` will do what we want.
       - But this is global
    - Another way is per project
       - Project -> Edit Project and add the settings section with correct path. shell_cmd might also be needed (?)
-      ~~~
+``` 
       {
     "build_systems":
     [
@@ -52,4 +52,4 @@ Then `subl .` will do what we want.
         ...
     }
 }
-~~~
+```
