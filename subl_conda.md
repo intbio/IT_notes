@@ -18,6 +18,8 @@ Then `subl .` will do what we want.
    - `conda create --name myenv`
    - `source activate myenv`
    - `conda install ...`
+   - `conda list --explicit > bio-env.txt`
+   - `conda install --file=bio-env.txt`
    - `source deactivate`
 + Now the tricky part:
    - Tools -> Build or Command+B will execute your Python script, but how to specify what Python Env it uses?
