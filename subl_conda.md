@@ -1,4 +1,4 @@
- # Configuring working Python environment using Sublime Text 2, Anaconda and Conda.
+ # Configuring working Python environment using Sublime Text, Anaconda and Conda.
 + Install Sublime Text editor https://www.sublimetext.com
 + Here is a cheat-sheet https://gist.github.com/paulovera/4486672
 + Command-Shift-P - is the access to command prompt and all cool functionality.
