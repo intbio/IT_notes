@@ -11,6 +11,7 @@ Linux: sudo ln -s /opt/sublime/sublime_text /usr/bin/subl    
 OS X: ln -sv "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
 + As a python environment manager let's use miniconda, install it from here https://conda.io/miniconda.html (usually you'd what Python 2.7)
    - Here is how to manage conda environments https://conda.io/docs/user-guide/tasks/manage-environments.html
+   - `conda env list`
    - `conda create --name myenv`
    - `source activate myenv`
    - `conda install ...`
