@@ -8,7 +8,9 @@
 + To turn Sublime into Python IDE you need to install Anaconda (do not confuse with Continuum Conda!) http://damnwidget.github.io/anaconda/
 + You need to be able to launch Sublime from the command line, so it will inherit at least the working directory.   
 Linux: sudo ln -s /opt/sublime/sublime_text /usr/bin/subl      
-OS X: ln -sv "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
+OS X: ln -sv "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl     
+Then `subl .` will do what we want.
+
 + As a python environment manager let's use miniconda, install it from here https://conda.io/miniconda.html (usually you'd what Python 2.7)
    - Here is how to manage conda environments https://conda.io/docs/user-guide/tasks/manage-environments.html
    - `conda env list`
