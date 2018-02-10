@@ -56,3 +56,11 @@ Then `subl .` will do what we want.
     }
 }
 ```
++ Finally Key Bindings might be adjusted Preferences -> Key Bindings
+   - Fix Home End button in OS X https://coderwall.com/p/upolqw/fix-sublime-text-home-and-end-key-usage-on-mac-osx
+```
+{ "keys": ["home"], "command": "move_to", "args": {"to": "bol"} },
+{ "keys": ["end"], "command": "move_to", "args": {"to": "eol"} },
+{ "keys": ["shift+end"], "command": "move_to", "args": {"to": "eol", "extend": true} },
+{ "keys": ["shift+home"], "command": "move_to", "args": {"to": "bol", "extend": true }},
+```
