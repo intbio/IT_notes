@@ -6,5 +6,5 @@
 - Here is how to install package controll and use it https://www.granneman.com/webdev/editors/sublime-text/packages/how-to-install-and-use-package-control/
 - To turn Sublime into Python IDE you need to install Anaconda (do not confuse with Continuum Conda!) http://damnwidget.github.io/anaconda/
 - You need to be able to launch Sublime from the command line, so it will inherit at lease the working directory
-Linux: sudo ln -s /opt/sublime/sublime_text /usr/bin/subl
-OS X: https://gist.github.com/martinbuberl/5823ed247d279d1a2d06
+Linux: sudo ln -s /opt/sublime/sublime_text /usr/bin/subl 
+OS X: ln -sv "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
