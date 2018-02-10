@@ -9,5 +9,12 @@
 + You need to be able to launch Sublime from the command line, so it will inherit at least the working directory.   
 Linux: sudo ln -s /opt/sublime/sublime_text /usr/bin/subl      
 OS X: ln -sv "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
++ As a python environment manager let's use miniconda, install it from here https://conda.io/miniconda.html (usually you'd what Python 2.7)
+   - Here is how to manage conda environments https://conda.io/docs/user-guide/tasks/manage-environments.html
+   - `conda create --name myenv`
+   - `source activate myenv`
+   - `conda install ...`
+   - `source deactivate`
 + Now the tricky part:
    - Tools -> Build or Command+B will execute your Python script, but how to specify what Python Env it uses?
+   - By default, Sublime will use the python interpreter that is in your PATH (see `which python`)
