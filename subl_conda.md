@@ -52,4 +52,4 @@ Then `subl .` will do what we want.
         ...
     }
 }
-      ~~~
+~~~
