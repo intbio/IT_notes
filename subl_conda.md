@@ -49,7 +49,6 @@ Then `subl .` will do what we want.
     "settings":
     {
         "python_interpreter": "/home/damnwidget/.virtualenvs/anaconda/bin/python"
-        ...
     }
 }
 ```
