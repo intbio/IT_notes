@@ -10,4 +10,4 @@
 Linux: sudo ln -s /opt/sublime/sublime_text /usr/bin/subl      
 OS X: ln -sv "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
 + Now the tricky part:
- 1. Tools -> Build or Command+B will execute your Python script, but how to specify what Python Env it uses?
+   1. Tools -> Build or Command+B will execute your Python script, but how to specify what Python Env it uses?
