@@ -21,4 +21,4 @@ OS X: ln -sv "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /u
    - By default, Sublime will use the python interpreter that is in your PATH (see `which python`)
    - Even if run from command line, Sublime does not inherit the PATH variables - it reads it directly from .bash_rc (?)
    - Here is a discussion https://stackoverflow.com/questions/44006122/launch-sublime-text-3-from-terminal-and-build-with-activated-conda-environment
-   - So one what to build is to add a .sublime
+   - So one way to build is to add a [.sublime-build](.sublime-build) file to the dir of the project, where /path/to/python should be replaced with `which python` output run when conda env is activated.
