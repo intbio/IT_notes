@@ -26,3 +26,30 @@ Then `subl .` will do what we want.
    - So one way is to:
       - Preferences->Package Settings->Anaconda->Settings-User and add `{"python_interpreter": "/usr/bin/python"}` choosing the desired path to python
       - In Tools-> Build System choose Anaconda Python Builder
+      - But this is global
+   - Another way is per project
+      - Project -> Edit Project and add the settings section with correct path. shell_cmd might also be needed (?)
+      ```
+      {
+    "build_systems":
+    [
+        {
+            "name": "Anaconda Python Builder",
+            "selector": "source.python",
+            "shell_cmd": "/home/damnwidget/.virtualenvs/anaconda/bin/python -u \"$file\""
+        }
+    ],
+    "folders":
+    [
+        {
+            "follow_symlinks": true,
+            "path": "."
+        }
+    ],
+    "settings":
+    {
+        "python_interpreter": "/home/damnwidget/.virtualenvs/anaconda/bin/python"
+        ...
+    }
+}
+      ```
