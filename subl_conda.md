@@ -18,8 +18,8 @@ Then `subl .` will do what we want.
    - `conda create --name myenv`
    - `source activate myenv`
    - `conda install ...`
-   - `conda list --explicit > bio-env.txt`
-   - `conda install --file=bio-env.txt`
+   - `conda list --explicit > env.txt`
+   - `conda install --file=env.txt`
    - `source deactivate`
 + Do not forget to save a file with all your dependencies in the repo `conda list --explicit > env.txt`
 + Now the tricky part:
