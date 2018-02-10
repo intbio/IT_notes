@@ -1,8 +1,8 @@
- # Configuring working Python environment using Sublime Text 2, Anaconda and Anaconda.
+ # Configuring working Python environment using Sublime Text 2, Anaconda and Conda.
 + Install Sublime Text editor https://www.sublimetext.com
 + Here is a cheat-sheet https://gist.github.com/paulovera/4486672
 + Command-Shift-P - is the access to command prompt and all cool functionality.
-+ Control + \` - access command line
++ Control + \` - access command line - this is a Python terminal.
 + https://packagecontrol.io - is the repo of all cool packages for sublime.
 + Here is how to install package controll and use it https://www.granneman.com/webdev/editors/sublime-text/packages/how-to-install-and-use-package-control/
 + To turn Sublime into Python IDE you need to install Anaconda (do not confuse with Continuum Conda!) http://damnwidget.github.io/anaconda/
@@ -23,4 +23,6 @@ Then `subl .` will do what we want.
    - By default, Sublime will use the python interpreter that is in your PATH (see `which python`)
    - Even if run from command line, Sublime does not inherit the PATH variables - it reads it directly from .bash_rc (?)
    - Here is a discussion https://stackoverflow.com/questions/44006122/launch-sublime-text-3-from-terminal-and-build-with-activated-conda-environment
-   - So one way to build is to add a [.sublime-build](.sublime-build) file to the dir of the project, where /path/to/python should be replaced with `which python` output run when conda env is activated.
+   - So one way is to:
+      - Preferences->Package Settings->Anaconda->Settings-User and add `{"python_interpreter": "/usr/bin/python"}` choosing the desired path to python
+      - In Tools-> Build System choose Anaconda Python Builder
