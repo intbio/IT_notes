@@ -20,3 +20,4 @@ OS X: ln -sv "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /u
    - Tools -> Build or Command+B will execute your Python script, but how to specify what Python Env it uses?
    - By default, Sublime will use the python interpreter that is in your PATH (see `which python`)
    - Even if run from command line, Sublime does not inherit the PATH variables - it reads it directly from .bash_rc (?)
+   - Here is a discussion https://stackoverflow.com/questions/44006122/launch-sublime-text-3-from-terminal-and-build-with-activated-conda-environment
