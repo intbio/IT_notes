@@ -11,7 +11,7 @@ Linux: sudo ln -s /opt/sublime/sublime_text /usr/bin/subl    
 OS X: ln -sv "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl     
 Then `subl .` will do what we want.
 
-+ As a python environment manager let's use miniconda, install it from here https://conda.io/miniconda.html (usually you'd what Python 2.7)
++ As a python environment manager let's use miniconda, install it from here https://conda.io/miniconda.html (usually you'd want Python 2.7)
    - Cheat sheet https://conda.io/docs/_downloads/conda-cheatsheet.pdf
    - Here is how to manage conda environments https://conda.io/docs/user-guide/tasks/manage-environments.html
    - `conda env list`
