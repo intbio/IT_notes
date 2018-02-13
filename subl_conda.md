@@ -32,7 +32,7 @@ Then `subl .` will do what we want.
       - Preferences->Package Settings->Anaconda->Settings-User and add `{"python_interpreter": "/usr/bin/python"}` choosing the desired path to python
       - In Tools-> Build System choose Anaconda Python Builder
       - But this is global
-   - Another way is per project
+   - Another way (prefered) is per project
       - Project -> Edit Project and add the settings section with correct path. shell_cmd might also be needed (?)
 ``` 
       {
