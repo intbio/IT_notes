@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd">
+<en-note>
+<div>VMD 1.9.2 with python compiling on El Capitan.</div>
+<div>/Users/alexeyshaytan/soft/vmd_comp/vmd-1.9.2</div>
+<div>Read <a href="http://www.ks.uiuc.edu/Research/vmd/doxygen/compiling.html"/><a href="http://www.ks.uiuc.edu/Research/vmd/doxygen/compiling.html">http://www.ks.uiuc.edu/Research/vmd/doxygen/compiling.html</a></div>
+<div><a href="http://www.ks.uiuc.edu/Research/vmd/plugins/doxygen/compiling.html"/><a href="http://www.ks.uiuc.edu/Research/vmd/plugins/doxygen/compiling.html"/><a href="http://www.ks.uiuc.edu/Research/vmd/plugins/doxygen/compiling.html">http://www.ks.uiuc.edu/Research/vmd/plugins/doxygen/compiling.html</a></div>
+<div><a href="http://www.robinbetz.com/blog/2015/01/08/compiling-vmd-with-python-support/">http://www.robinbetz.com/blog/2015/01/08/compiling-vmd-with-python-support/</a></div>
+<div><br/></div>
+<div>xcode updated</div>
+<div>xcode CLT udated (x..-select —intall)</div>
+<div>brew updated April 4, 2016 </div>
+<div>brew install gcc</div>
+<div>brew install wget</div>
+<div><br/></div>
+<div>1) <span style="color: rgb(0, 0, 0); font-family: -webkit-standard; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); float: none;"> a normal build of VMD requires that Tcl/Tk 8.4.x, FLTK 1.1.7, and OpenGL libraries be compiled and linkable from within the </span><b style="color: rgb(0, 0, 0); font-family: -webkit-standard; font-style: normal; font-variant: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">lib</b><span style="color: rgb(0, 0, 0); font-family: -webkit-standard; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); float: none;"> area of the VMD source tree or from the system libraries.</span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;"><span style="background-color: rgb(255, 255, 255);"><br/></span></span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">brew install homebrew/dupes/tcl-tk</span></div>
+<div><br/></div>
+<table style="-evernote-table:true;border-collapse:collapse;width:100%;table-layout:fixed;margin-left:0px;">
+<tr>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:100%;">
+<div>==&gt; Pouring tcl-tk-8.6.4.el_capitan.bottle.2.tar.gz</div>
+<div>==&gt; Caveats</div>
+<div>This formula is keg-only, which means it was not symlinked into /usr/local.</div>
+<div><br/></div>
+<div>Tk installs some X11 headers and OS X provides an (older) Tcl/Tk.</div>
+<div><br/></div>
+<div>Generally there are no consequences of this for you. If you build your</div>
+<div>own software and it requires this formula, you'll need to add to your</div>
+<div>build variables:</div>
+<div><br/></div>
+<div>    LDFLAGS:  -L/usr/local/opt/tcl-tk/lib</div>
+<div>    CPPFLAGS: -I/usr/local/opt/tcl-tk/include</div>
+<div><br/></div>
+<div>==&gt; Summary</div>
+<div>🍺  /usr/local/Cellar/tcl-tk/8.6.4: 2,804 files, 28.5M</div>
+</td>
+</tr>
+</table>
+<div><br/></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">cd lib/fltk</span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">wget http://fltk.org/pub/fltk/1.3.3/fltk-1.3.3-source.tar.gz</span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">./configure</span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;"><br/></span></div>
+<div>use this fix</div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;"><br/></span></div>
+<table style="-evernote-table:true;border-collapse:collapse;width:100%;table-layout:fixed;margin-left:0px;">
+<tr>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:100%;">
+<div>
+<p style="box-sizing: border-box; color: rgb(51, 51, 51); font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">I went directly into the file giving me the error (e.g., fl_line_style.cxx) and commented out the <code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 12px; padding: 0.2em 0px; background-color: rgba(0, 0, 0, 0.0392157); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;">enum</code> on every line that had an error, e.g.,</p>
+<p style="box-sizing: border-box; color: rgb(51, 51, 51); font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">I changed:</p>
+<p style="box-sizing: border-box; color: rgb(51, 51, 51); font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;"><code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 12px; padding: 0.2em 0px; background-color: rgba(0, 0, 0, 0.0392157); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;">static enum CGLineCap fl_quartz_line_cap_ = kCGLineCapButt;</code></p>
+<p style="box-sizing: border-box; color: rgb(51, 51, 51); font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">To:</p>
+<p style="box-sizing: border-box; color: rgb(51, 51, 51); font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;"><code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 12px; padding: 0.2em 0px; background-color: rgba(0, 0, 0, 0.0392157); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;">static /*enum*/ CGLineCap fl_quartz_line_cap_ = kCGLineCapButt;</code></p>
+<p style="box-sizing: border-box; color: rgb(51, 51, 51); font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">I repeated this for every line that the compiler threw an error on. In my fl_line_style.cxx file, it was on lines 38, 39, 113, and 115.</p>
+</div>
+<div><br/></div>
+<div>
+<div style="box-sizing: border-box; color: rgb(51, 51, 51); font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+<div>Then I was finally able to run <code style="box-sizing: border-box; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 12px; padding: 0.2em 0px; background-color: rgba(0, 0, 0, 0.0392157); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;">make</code> successfully.</div>
+</div>
+</div>
+</td>
+</tr>
+</table>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;"><br/></span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">make</span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;"><br/></span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;"><br/></span></div>
+<div>In lib/fltk symlink fltk to fltk-1.3.3</div>
+<div>in lib/flkt</div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">mkdir MACOSXX86_64</span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">cd MACOSXX86_64</span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">cp ../fltk/lib/*.a .</span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;"><br/></span></div>
+<div>go to lib/stride</div>
+<div>and copy its contents from a binary distribution of VMD</div>
+<div>do the same for surf (I had it anyway) , compile if needed using README files.</div>
+<div><br/></div>
+<div>go to lib/tachyon follow README to get tachyon.</div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">wget <a href="http://jedi.ks.uiuc.edu/~johns/raytracer/files/0.99b6/tachyon-0.99b6.tar.gz">http://jedi.ks.uiuc.edu/~johns/raytracer/files/0.99b6/tachyon-0.99b6.tar.gz</a></span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">tar -xf tachyon...</span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">cd tachyon</span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">cd unix</span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">make macosx-x86-thr</span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">cd ..</span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">cd ..</span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">ln -s tachyon/src include</span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">ln -s tachyon/compile/macosx-x86-thr/ lib_MACOSXX86_64</span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">cp tachyon/compile/macosx-x86-thr/tachyon tachyon_MACOSXX86_64</span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;"><br/></span></div>
+<div><br/></div>
+<div>in vmd-1.9.2 dir</div>
+<div><br/></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">cd ..</span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">cd plugins</span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">export TCLLIB=/usr/local/opt/tcl-tk/lib</span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">export TCLINC=/usr/local/opt/tcl-tk/include</span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;"><br/></span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">make MACOSXX86_64 TCLINC=$TCLINC TCLLIB=$TCLLIB/libtclstub8.6.a</span></div>
+<div>or</div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">make MACOSXX86_64 TCLINC=$TCLINC TCLLIB=/usr/local/opt/tcl-tk/lib/libtclstub8.6.a</span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;"><br/></span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">export PLUGINDIR=/Users/alexeyshaytan/soft/vmd_comp/vmd-1.9.2/plugins</span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">make distrib</span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;"><br/></span></div>
+<div>Now plugis are ready.</div>
+<div>and we are ready to try to compile limited version of vmd</div>
+<div><br/></div>
+<div>edit configure scripts and replace corresponding installation PATH with corresponding path</div>
+<div>example</div>
+<div><br/></div>
+<table style="-evernote-table:true;border-collapse:collapse;width:100%;table-layout:fixed;margin-left:0px;">
+<tr>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:100%;">
+<div>$install_name = &quot;vmd-1.9.2-test&quot;;</div>
+<div><br/></div>
+<div># Directory where VMD startup script is installed, should be in users' paths.</div>
+<div>$install_bin_dir=&quot;/Users/alexeyshaytan/bin&quot;;</div>
+<div><br/></div>
+<div># Directory where VMD files and executables are installed</div>
+<div>$install_library_dir=&quot;/Users/alexeyshaytan/bins/lib/$install_name&quot;;</div>
+</td>
+</tr>
+</table>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">./configure MACOSXX86_64 FLTKOPENGL FLTK COLVARS IMD TK TCL SILENT PTHREADS LIBTACHYON LP64</span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">cd src;</span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;"><br/></span></div>
+<div>In Makefile correct error in fltk include path in line 486(?- will depend on the configuration) and add libraries in bold, so it looks like this</div>
+<div>INCDIRS     =   -I../lib/actc/include   -I/usr/include/CL  -I../lib/tachyon/include  -I../lib/tcl/include -I../lib/tk/lib_MACOSXX86_64/Tk.framework/Versions/8.5/Headers -I../plugins/include -I../plugins/MACOSXX86_64/molfile -I../lib/fltk/fltk-1.3<b>.3</b> -I. <b>-I/opt/X11/include</b></div>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+<div>substitute /Developer/Tools/Rez with /usr/bin/Rez everywhere</div>
+<div><br/></div>
+<div>get missing resource file</div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">wget http://www.ks.uiuc.edu/Research/vmd/mailing_list/vmd-l/att-15274/vmdmac.r.gz</span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">gunzip vmdmac.r.gz</span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;"><br/></span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">make veryclean; make</span></div>
+<div><br/></div>
+<div>Simple version of VMD should be compiled without errors.</div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">make install</span></div>
+<div>now correct in /Users/alexeyshaytan/bin/vmd-1.9.2-test</div>
+<div>this piece of code</div>
+<div><br/></div>
+<table style="-evernote-table:true;border-collapse:collapse;width:100%;table-layout:fixed;margin-left:0px;">
+<tr>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:100%;">
+<div>case *Darwin*:</div>
+<div>  if ($?TMPDIR == &quot;0&quot; ) then</div>
+<div>    setenv TMPDIR /tmp</div>
+<div>  endif</div>
+<div><b>  set ARCH=MACOSXX86_64</b></div>
+<div>  set VMD_WINTERM=xterm</div>
+<div>  set VMD_WINOPTS='-sb -sl 1000 -e'</div>
+<div>  ## Override default window size and position </div>
+<div>  setenv VMDSCRPOS &quot;400 200&quot;</div>
+<div>  setenv VMDSCRSIZE &quot;512 512&quot;</div>
+<div>  set VMDDEBUGGER=&quot;gdb&quot;</div>
+<div><br/></div>
+</td>
+</tr>
+</table>
+<div><br/></div>
+<div><br/></div>
+<div>Try to launch it from your path VMD should work!</div>
+<div><br/></div>
+<div><br/></div>
+<div>
+<hr/></div>
+<div><br/></div>
+<div>Now if this is working, let’s now build a more sofisticated version with python and other libs.</div>
+<div>Go back to vmd-1.9.2 dir</div>
+<div><br/></div>
+<div>in configure</div>
+<div><br/></div>
+<table style="-evernote-table:true;border-collapse:collapse;width:100%;table-layout:fixed;margin-left:0px;">
+<tr>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:100%;">
+<div>$install_name = &quot;<b>vmdpy</b>&quot;;</div>
+<div><br/></div>
+<div># Directory where VMD startup script is installed, should be in users' paths.</div>
+<div>$install_bin_dir=&quot;/Users/alexeyshaytan/bin&quot;;</div>
+<div><br/></div>
+<div># Directory where VMD files and executables are installed</div>
+<div>$install_library_dir=&quot;/Users/alexeyshaytan/bins/lib/$install_name&quot;;</div>
+</td>
+</tr>
+</table>
+<div><br/></div>
+<div><br/></div>
+<div>let’s go for libs</div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">brew install python</span></div>
+<div>in .profile prepend brew path export PATH=/usr/local/bin:$PATH</div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">brew install homebrew/python/numpy</span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">brew install homebrew/science/netcdf</span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;"><br/></span></div>
+<div>in lib/actc </div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">wget <a href="http://plunk.org/~grantham/actc-1.1.tar.gz">http://plunk.org/~grantham/actc-1.1.tar.gz</a></span></div>
+<div>tar -xf ..</div>
+<div>compile with make  - fails - leave for later</div>
+<div><br/></div>
+<div>edit main configure file</div>
+<div><br/></div>
+<div><br/></div>
+<table style="-evernote-table:true;border-collapse:collapse;width:100%;table-layout:fixed;margin-left:0px;">
+<tr>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:100%;">
+<div>$<b>stock_python_include_dir=$ENV{&quot;PYTHON_INCLUDE_DIR&quot;} || &quot;/usr/local/Frameworks/Python.framework/Headers&quot;;</b></div>
+<div><b>$stock_python_library_dir=$ENV{&quot;PYTHON_LIBRARY_DIR&quot;} || &quot;/usr/local/Frameworks/Python.framework/Versions/2.7/lib/&quot;;</b></div>
+<div># $stock_python_include_dir=$ENV{&quot;PYTHON_INCLUDE_DIR&quot;} || &quot;$vmd_library_dir/python/lib_$config_arch/include/python2.5&quot;;</div>
+<div># $stock_python_library_dir=$ENV{&quot;PYTHON_LIBRARY_DIR&quot;} || &quot;$vmd_library_dir/python/lib_$config_arch/lib/python2.5/config&quot;;</div>
+<div><br/></div>
+</td>
+</tr>
+</table>
+<div><br/></div>
+<div>comment out and modify MAOSXX86_64 block lines 2535-2537</div>
+<div>we need to suppress use of local python framework</div>
+<div><br/></div>
+<table style="-evernote-table:true;border-collapse:collapse;width:100%;table-layout:fixed;margin-left:0px;">
+<tr>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:100%;">
+<div>     # $python_include     = &quot;-F/System/Library/Frameworks&quot;;</div>
+<div>    # $python_library     = &quot;&quot;;</div>
+<div>    $python_libs        = &quot;-lpython2.7 -lpthread&quot;;</div>
+</td>
+</tr>
+</table>
+<div><br/></div>
+<div><br/></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">./configure MACOSXX86_64 FLTKOPENGL FLTK COLVARS IMD TK TCL SILENT PTHREADS LIBTACHYON LP64 </span><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">PYTHON NETCDF   TDCONNEXION </span></div>
+<div><br/></div>
+<div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">cd src;</span></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;"><br/></span></div>
+</div>
+<div>In Makefile correct error in fltk include path in line 486(?- will depend on the configuration) and add libraries in bold, so it looks like this</div>
+<div><br/></div>
+<div>INCDIRS     =     -fpascal-strings -I../lib/tachyon/include -I/usr/local/Frameworks/Python.framework/Headers -I../lib/numpy/lib_MACOSXX86_64/include -I../lib/python/lib_MACOSXX86_64/lib/python2.5/site-packages/numpy/core/include  -I../lib/tcl/include -I../lib/tk/lib_MACOSXX86_64/Tk.framework/Versions/8.5/Headers -I../plugins/include -I../plugins/MACOSXX86_64/molfile -I../lib/netcdf/include -I../lib/fltk/fltk-1.3.<b>3</b> -I.  <b>-I/opt/X11/include</b></div>
+<div><br/></div>
+<div>substitute /Developer/Tools/Rez with /usr/bin/Rez everywhere</div>
+<div><br/></div>
+<div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;"> make -j 8</span></div>
+<div><br/></div>
+<div>now correct in /Users/alexeyshaytan/bin/vmdpy</div>
+<div>
+<div>this piece of code</div>
+<div><br/></div>
+<table style="-evernote-table:true;border-collapse:collapse;width:100%;table-layout:fixed;margin-left:0px;">
+<tr>
+<td style="border-style:solid;border-width:1px;border-color:rgb(219,219,219);padding:10px;margin:0px;width:100%;">
+<div>case *Darwin*:</div>
+<div>  if ($?TMPDIR == &quot;0&quot; ) then</div>
+<div>    setenv TMPDIR /tmp</div>
+<div>  endif</div>
+<div><b>  set ARCH=MACOSXX86_64</b></div>
+<div>  set VMD_WINTERM=xterm</div>
+<div>  set VMD_WINOPTS='-sb -sl 1000 -e'</div>
+<div>  ## Override default window size and position </div>
+<div>  setenv VMDSCRPOS &quot;400 200&quot;</div>
+<div>  setenv VMDSCRSIZE &quot;512 512&quot;</div>
+<div>  set VMDDEBUGGER=&quot;gdb&quot;</div>
+<div><br/></div>
+</td>
+</tr>
+</table>
+</div>
+<div><br/></div>
+<div><br/></div>
+<div>vmdpy - should launch it!</div>
+<div><br/></div>
+<div><br/></div>
+<div>about python configuration</div>
+<div><a href="http://www.ks.uiuc.edu/Research/vmd/current/ug/node162.html"/><a href="http://www.ks.uiuc.edu/Research/vmd/current/ug/node162.html">http://www.ks.uiuc.edu/Research/vmd/current/ug/node162.html</a></div>
+<div><br/></div>
+<div>It seems that since we attached Python to VMD as a library but not framework,</div>
+<div>matplotlib will have problems working from VMD.</div>
+<div>Probably, a solution will be just to use system python and install all libs in system.</div>
+</en-note>
