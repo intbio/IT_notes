@@ -1,4 +1,5 @@
 Instuctions to compile VMD for Mac
+
 0) don't forget to install XQuartz and check opt/include/X11
 0) check that gcc is os x native one
 0) install cuda driver and cuda toolkit
