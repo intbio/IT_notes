@@ -1,0 +1,3 @@
+#!/bin/bash
+export VMDMSMSUSEFILE=1
+/Applications/MOLSIM/VMD\ 1.9.1.app/Contents/MacOS/startup.command $*

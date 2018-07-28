@@ -1,0 +1,3 @@
+#!/bin/bash
+export VMDMSMSUSEFILE=1
+/Users/alexeyshaytan/bin/vmdpy -dispdev none  $*
