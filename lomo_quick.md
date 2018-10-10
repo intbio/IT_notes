@@ -1,5 +1,5 @@
 # Quick instructions on using Lomonosov1/2 supercomputers
-## Getting access
+## Connecting
 - Generate public/private key pair and add public key in Octoshell (users.parallel.ru)
 `ssh-keygen -t rsa -b 2048 -C 'mgu-user1' -f ~/.ssh/mgu`
 - Make an ~/.ssh/config file
