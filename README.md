@@ -9,6 +9,7 @@ Useful IT notes and code snippets.
 
 ## Supercomputing
 - Instructions on using Lomonosov/Lomonosov-2 supercomputer (in Russian) - [here](lomonosov.md)
+- Quick instructions - [here](lomo_quick.md)
 
 ## Web technologies
 - How to create web-site using GitHub pages and Jekyll [gh-jekyll](gh-jekyll.md)
