@@ -17,7 +17,7 @@ IdentityFile PATH_TO_PRIVATE_KEY
 - connection then should be as easy as ```ssh lomo``` or ```ssh lomo2```
 
 
-## Understanding queues
+## Understanding queues (Lomonosov-2)
 ```
 module add slurm
 sinfo
