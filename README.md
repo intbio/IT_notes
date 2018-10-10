@@ -7,6 +7,8 @@ Useful IT notes and code snippets.
 ## Molecular modeling
 - Installing VMD, see [vmd](vmd)
 
+## Supercomputing
+- Using Lomonosov supercomputer (in Russian)
 
 ## Web technologies
 - How to create web-site using GitHub pages and Jekyll [gh-jekyll](gh-jekyll.md)
