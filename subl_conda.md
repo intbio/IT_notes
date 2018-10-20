@@ -22,6 +22,9 @@ Then `subl .` will do what we want.
    - `conda list --export > env.txt`
    - `conda install --file env.txt`
    - `source deactivate`
+   - `conda env export > environment.yml` Alternative way to save env through yml
+   - `conda env create -f environment.yml`
+   - `conda env update -f environment.yml`
 + Do not forget to save a file with all your dependencies in the repo `conda list --export > env.txt`
 + Now the tricky part:
    - Tools -> Build or Command+B will execute your Python script, but how to specify what Python Env it uses?
