@@ -2,6 +2,7 @@
 Useful IT notes and code snippets.
 
 ## General
+- Using conda environment manager - [conda.md](conda.md)
 - Configuring working Python environment using Sublime Text, Anaconda and Conda - [subl_conda.md](subl_conda.md).
 
 ## Molecular modeling
