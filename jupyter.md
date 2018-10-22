@@ -13,7 +13,7 @@ There are two modes, press Esc to get to command mode from the cell, Press Enter
 
 - Command mode - binds the keyboard to notebook level actions. Indicated by a grey cell border with a blue left margin.
 - Edit mode - when you’re typing in a cell. Indicated by a green cell border
-
+### Basic shortcuts
 - shift + enter run cell, select or create cell below (Command and Edit mode)
 - Y change cell to code mode (Command mode)
 - M change cell to markdown mode (Command mode)
