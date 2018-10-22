@@ -3,6 +3,7 @@ Useful IT notes and code snippets.
 
 ## General
 - Using conda environment manager - [conda.md](conda.md)
+- Using Jupyter Notebook/Lab/Hub - [jupyter.md](jypyter.md)
 - Configuring working Python environment using Sublime Text, Anaconda and Conda - [subl_conda.md](subl_conda.md).
 
 ## Molecular modeling
