@@ -11,6 +11,6 @@
    - `conda list --export > env.txt`
    - `conda install --file env.txt`
    - `source deactivate`
-   - `conda env export > environment.yml` Alternative way to save env through yml
-   - `conda env create --name <env> -f environment.yml`
-   - `conda env update -f environment.yml`
+   - `conda env export > env.yml` Alternative way to save env through yml
+   - `conda env create --name <env> -f env.yml`
+   - `conda env update -f env.yml`
