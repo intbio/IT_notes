@@ -10,10 +10,13 @@ cd /usr/local/bin
 sudo wget https://raw.githubusercontent.com/intbio/IT_notes/master/scripts/gacp
 sudo wget https://raw.githubusercontent.com/intbio/IT_notes/master/scripts/ll
 sudo wget https://raw.githubusercontent.com/intbio/IT_notes/master/scripts/upd_ssh_keys
+sudo wget https://raw.githubusercontent.com/intbio/IT_notes/master/scripts/conda_git_init
 sudo chmod 755 ll
 sudo chmod 755 gacp
 sudo chmod 755 upd_ssh_keys
+sudo chmod 755 conda_git_init
 sudo upd_ssh_keys
+echo "alias cga='source activate \${PWD##*/}'" >>~/.bash_profile
 ```
 
 
