@@ -6,6 +6,7 @@ Useful IT notes and code snippets.
 - Using Jupyter Notebook/Lab/Hub - [jupyter.md](jupyter.md)
 - Configuring working Python environment using Sublime Text, Anaconda and Conda - [subl_conda.md](subl_conda.md).
 - Using git - [git.md](git.md)
+- New Mac configuration - [mac_conf.md](mac_conf.md)
 
 ## Molecular modeling
 - Installing VMD, see [vmd](vmd)
