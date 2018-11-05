@@ -1,6 +1,7 @@
 # Configure a new mac
 - Install http://brew.sh
-- brew install bash-completion
+- `brew install bash-completion`
+- `brew install wget`
 - Miniconda
 
 ## Scripts
