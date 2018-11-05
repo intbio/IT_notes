@@ -1,0 +1,9 @@
+#!/bin/sh
+if [ -f env.yml ]; then
+	conda env create --name <env> -f env.yml
+else
+	conda create --name ${PWD##*/}
+	source activate ${PWD##*/}
+	conda install -c conda-forge jupyterlab
+	conda env export > env.yml
+fi
