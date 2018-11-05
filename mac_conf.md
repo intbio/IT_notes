@@ -20,7 +20,7 @@ sudo upd_ssh_keys
 
 ## Soft
 - Sublime Text
-   - `sudo ln -s /Applications/Sublime Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl`
+   - `sudo ln -s '/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' /usr/local/bin/subl`
 - MS Office Education
 - Mendeley
 - Slack
