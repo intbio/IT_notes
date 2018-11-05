@@ -5,6 +5,7 @@
 
 ## Scripts
 - [gacp](scripts/gacp)
+- [ll](scripts/ll)
 
 
 ## Soft
