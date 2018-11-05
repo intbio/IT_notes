@@ -4,6 +4,7 @@
 - Miniconda
 
 ## Scripts
+May be put to `/usr/local/bin`
 - [gacp](scripts/gacp)
 - [ll](scripts/ll)
 
