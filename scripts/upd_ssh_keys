@@ -1,0 +1,5 @@
+#!/bin/sh
+mkdir -p ~/.ssh
+ln -s /Volumes/msd/Sync/ssh/config ~/.ssh/
+chmod 600 /Volumes/msd/Sync/ssh/*
+chmod 644 /Volumes/msd/Sync/ssh/config
