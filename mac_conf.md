@@ -17,6 +17,7 @@ sudo chmod 755 upd_ssh_keys
 sudo chmod 755 conda_git_init
 sudo upd_ssh_keys
 echo "alias cga='source activate \${PWD##*/}'" >>~/.bash_profile
+echo "alias cgs='conda env export > env.yml'"
 ```
 
 
