@@ -6,9 +6,11 @@
 
 ## Scripts
 ```
-cd /usr/local/bin
+sudo cd /usr/local/bin
 wget https://raw.githubusercontent.com/intbio/IT_notes/master/scripts/gacp
 wget https://raw.githubusercontent.com/intbio/IT_notes/master/scripts/ll
+chmod 755 ll
+chmod 755 gacp
 ```
 
 
