@@ -5,9 +5,12 @@
 - Miniconda
 
 ## Scripts
-May be put to `/usr/local/bin`
-- [gacp](scripts/gacp)
-- [ll](scripts/ll)
+```
+cd /usr/local/bin
+wget https://raw.githubusercontent.com/intbio/IT_notes/master/scripts/gacp
+wget https://raw.githubusercontent.com/intbio/IT_notes/master/scripts/ll
+```
+
 
 
 ## Soft
