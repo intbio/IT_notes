@@ -6,13 +6,13 @@
 
 ## Scripts
 ```
-sudo cd /usr/local/bin
-wget https://raw.githubusercontent.com/intbio/IT_notes/master/scripts/gacp
-wget https://raw.githubusercontent.com/intbio/IT_notes/master/scripts/ll
-wget https://raw.githubusercontent.com/intbio/IT_notes/master/scripts/upd_ssh_keys
-chmod 755 ll
-chmod 755 gacp
-chmod 755 upd_ssh_keys
+cd /usr/local/bin
+sudo wget https://raw.githubusercontent.com/intbio/IT_notes/master/scripts/gacp
+sudo wget https://raw.githubusercontent.com/intbio/IT_notes/master/scripts/ll
+sudo wget https://raw.githubusercontent.com/intbio/IT_notes/master/scripts/upd_ssh_keys
+sudo chmod 755 ll
+sudo chmod 755 gacp
+sudo chmod 755 upd_ssh_keys
 sudo upd_ssh_keys
 ```
 
