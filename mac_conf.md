@@ -28,7 +28,8 @@ echo "alias jn='jupyter notebook" >>~/.bash_profile
 ## Soft
 - Sublime Text
    - `sudo ln -s '/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' /usr/local/bin/subl`
-   ```
+   
+```
    Fix Home and End keys
    Preferences > Key Bindings - User
 
@@ -38,7 +39,9 @@ Adding the following to the array;
 { "keys": ["end"], "command": "move_to", "args": {"to": "eol"} },
 { "keys": ["shift+end"], "command": "move_to", "args": {"to": "eol", "extend": true} },
 { "keys": ["shift+home"], "command": "move_to", "args": {"to": "bol", "extend": true } }
-   ```
+  
+```
+
 - MS Office Education
 - Mendeley
 - Slack
