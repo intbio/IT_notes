@@ -11,6 +11,9 @@ Useful IT notes and code snippets.
 ## Molecular modeling
 - Installing VMD, see [vmd](vmd)
 
+## Newton
+- [Quick instructions](newton_cheatcheet.md)
+
 ## Supercomputing
 - Instructions on using Lomonosov/Lomonosov-2 supercomputer (in Russian) - [here](lomonosov.md)
 - Quick instructions - [here](lomo_quick.md)
