@@ -19,8 +19,8 @@ sudo chmod 755 conda_git_init
 sudo upd_ssh_keys
 echo "alias cga='source activate \${PWD##*/}'" >>~/.bash_profile
 echo "alias cgs='conda env export > env.yml'" >>~/.bash_profile
-echo "alias jl='jupyter lab" >>~/.bash_profile
-echo "alias jn='jupyter notebook" >>~/.bash_profile
+echo "alias jl='jupyter lab' >>~/.bash_profile
+echo "alias jn='jupyter notebook' >>~/.bash_profile
 ```
 
 
