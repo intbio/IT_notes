@@ -12,7 +12,7 @@ Replace USERNAME with your user name
 | Session name | newton |
 |host     |newton.bioeng.ru |
 | login   | USERNAME  |
-| session type| XFCE |
+| session type| custom desktop: vglrun startxfce4 |
 * Double click created session
 * **On a first login wait until question about default panel settings arizes. Select default panels.**
 
