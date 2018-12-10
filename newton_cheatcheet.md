@@ -31,7 +31,7 @@ Then select default panel settings.
 ### Via JupyterHub
 Open [https://newton.bioeng.ru/jupyter](https://newton.bioeng.ru/jupyter) and log in.
 
-### JupyterHub and conda
+## JupyterHub and conda
 Firstly see [info about conda environments](conda.md) and [conda cheatcheet](https://conda.io/docs/_downloads/conda-cheatsheet.pdf).
 
 In jupyter you can select different kernels. There are a couple of preinstalled kernels that contain different conda environments (see 'conda' tab in jupyter), those environments are located at /opt/miniconda3 and can not be chaneged by user.
@@ -45,3 +45,6 @@ To add a new kernel for your project you have to install `ipykernel` package to 
 Currently jupyter notebooks are lunched by default.
 
 To open JupyterLab change the last word in the link from /tree to /lab
+
+## Conda
+To load conda use `module load conda3`
