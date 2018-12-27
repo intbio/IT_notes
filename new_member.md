@@ -4,7 +4,7 @@ Please, use this email for registering to all work related services.
 2. Register on github.com with this email. Your user name should be like j-smith
 3. Send your username and email you used to register on github to info@intbio.org . You will be added to intbio organization and have 
 access to repositories. Check it https://github.com/intbio
-4. For communications we use slack https://slack.com . Install it . You will get invitation to a relevant channel on your new email.
+4. For communications we use slack https://slack.com . Install it . Use this link to signup to a group workspace https://join.slack.com/t/intbiol/signup . You may also get an invitation to a relevant project channel if you plan to work on a specific project - so check you email.
 5. Likely you will also get an account on newton.bioeng.org , which will be like j_smith
 6. Familiarise yourself with using it https://github.com/intbio/IT_notes/blob/master/newton_cheatsheet.md
 7. Most likely you'll need to understand how to use Linux, Git, Jupyter notebooks and program in Python. Please, use this Crash course to learn it https://github.com/intbio/IntBioEdu/blob/master/ITcc.md
