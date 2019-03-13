@@ -16,6 +16,12 @@ IdentityFile PATH_TO_PRIVATE_KEY
 ```
 - connection then should be as easy as ```ssh lomo``` or ```ssh lomo2```
 
+## Using custom modules 
+Add this line to your .bashrc file:
+```
+export MODULEPATH=$MODULEPATH:/home/kniazevaanastasiia2015_1609/_scratch/_software/modules
+```
+Then load modules as usual
 
 ## Understanding queues (Lomonosov-2)
 ```
