@@ -18,6 +18,8 @@ Useful IT notes and code snippets.
 - Instructions on using Lomonosov/Lomonosov-2 supercomputer (in Russian) - [here](lomonosov.md)
 - Quick instructions - [here](lomo_quick.md)
 - Running Gromacs on Lomonosov - [here](gmx_lomo.md)
+- Running Gromacs with Plumed on Lomonosov - [here](gmx_lomo_plumed.md)
+- Compiling Gromacs with Plumed on Lomonosov - [here](gmx_compile_lomo_plumed.md)
 
 ## Web technologies
 - How to create web-site using GitHub pages and Jekyll [gh-jekyll](gh-jekyll.md)
