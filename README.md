@@ -12,7 +12,7 @@ Useful IT notes and code snippets.
 - Installing VMD, see [vmd](vmd)
 
 ## Newton
-- [Quick instructions](newton_cheatcheet.md)
+- [Quick instructions](newton_cheatsheet.md)
 
 ## Supercomputing
 - Instructions on using Lomonosov/Lomonosov-2 supercomputer (in Russian) - [here](lomonosov.md)
