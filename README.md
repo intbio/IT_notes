@@ -1,6 +1,9 @@
 # IT notes
 Useful IT notes and code snippets.
 
+## For new members of the group
+- Pls, follow these instructions to connect to the IT infrastructure [new_member.md](new_member.md)
+
 ## General
 - Using conda environment manager - [conda.md](conda.md)
 - Using Jupyter Notebook/Lab/Hub - [jupyter.md](jupyter.md)
