@@ -1,7 +1,7 @@
 # New group member orientation notes
 1. You now have an email forwarder derived from your name, e.g. John Smith => j.smith@intbio.org
 Please, use this email for registering to all work related services.
-2. Register on github.com with this email. Your user name should be like j-smith
+2. Register on github.com with this email. Your user name should be like j-smith , or if it is taken j-smith-biomsu
 3. Send your username and email you used to register on github to info@intbio.org . You will be added to intbio organization and have 
 4. You will get invitation to intbio group on Zotero, please register at https://www.zotero.org . Zotero is a reference and citation manager used in our group.
 access to repositories. Check it https://github.com/intbio
