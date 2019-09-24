@@ -1,6 +1,6 @@
 ### To run gromacs with plumed on lomonosov
 * add environment variable
-`export MODULEPATH=$MODULEPATH:/home/kniazevaanastasiia2015_1609/_scratch/_software/modules`
+`export MODULEPATH=$MODULEPATH:/home/satary_1609/_scratch/_software/modules`
 * Then load module 
 `module load gromacs_2018.4_plumed`
 * and run gromacs with script 
