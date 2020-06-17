@@ -14,3 +14,6 @@
    - `conda env export > env.yml` Alternative way to save env through yml
    - `conda env create --name <env> -f env.yml`
    - `conda env update -f env.yml`
+
+If you want an env to be accessible in Jupyter
+  - `conda install ipykernel`
