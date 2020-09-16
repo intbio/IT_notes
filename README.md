@@ -15,6 +15,7 @@ Useful IT notes and code snippets.
 - Installing VMD, see [vmd](vmd)
 
 ## Newton
+- [Rules](newton_rules.md)
 - [Quick instructions](newton_cheatsheet.md)
 - [Using SLURM (running tasks on cluster nodes)](slurm_cheatcheet.md)
 
