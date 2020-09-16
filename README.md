@@ -16,6 +16,7 @@ Useful IT notes and code snippets.
 
 ## Newton
 - [Quick instructions](newton_cheatsheet.md)
+- [Using SLURM (running tasks on cluster nodes)](slurm_cheatcheet.md)
 
 ## Supercomputing
 - Instructions on using Lomonosov/Lomonosov-2 supercomputer (in Russian) - [here](lomonosov.md)
