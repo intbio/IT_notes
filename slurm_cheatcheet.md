@@ -72,3 +72,5 @@ foldx --command=Pssm --analyseComplexChains=V --pdb=4X23_Repair.pdb --positions=
 * monitor your job with `squeue`
 * errors and output will be stored in files slurmout.*JOBNUMBER*
 
+## IF YOU USE GMX_TEMPLATE
+Edit config.py and select either newton.sh or newton_old.sh (gpu or cpu partition, depending on your task and cluster load)
