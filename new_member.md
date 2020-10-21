@@ -7,7 +7,8 @@ Please, use this email for registering to all work related services. This is jus
 5. For communications we use slack https://slack.com . Install it . Use this link to signup to a group workspace https://join.slack.com/t/intbiol/signup . You may also get an invitation to a relevant project channel if you plan to work on a specific project - so check you email.
 6. Likely you will also get an account on [newton.bioeng.ru](https://newton.bioeng.ru/jupyter) , which will be like j_smith
 7. Likely you will also get an account on Redmine https://newton.bioeng.ru/redmine/
-8. Please, send any further qestions to the #helpdesk channel in Slack!
+8. If you are doing experimental work, register on http://benchling.com
+9. Please, send any further qestions to the #helpdesk channel in Slack!
 
 ## Basic IT training
 
