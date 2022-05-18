@@ -16,4 +16,9 @@
    - `conda env update -f env.yml`
 
 If you want an env to be accessible in Jupyter
-  - `conda install ipykernel`
+  ```bash
+  (base)$ source activate myenv
+  (myenv)$ conda install ipykernel
+  # Then restart your Jupyter Notebook/Lab
+  ```
+  
