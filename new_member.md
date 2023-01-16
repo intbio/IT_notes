@@ -8,7 +8,8 @@ Please, use this email for registering to all work related services. This is jus
 6. Likely you will also get an account on [newton.bioeng.ru](https://newton.bioeng.ru/jupyter) , which will be like j_smith
 7. Likely you will also get an account on Notion. https://notion.so Register their and send info to info@intbio.org about your account to be added to pages.
 8. If you are doing experimental work, register on http://benchling.com . Send request to join "intbiogroup". Send email to info@intbio.org to request aproval. 
-9. Please, send any further qestions to the #helpdesk channel in Slack!
+9. You can get login and passoword from local network and computers (ask G. Armeev).
+10. Please, send any further qestions to the #helpdesk channel in Slack!
 
 ## Basic IT training
 
