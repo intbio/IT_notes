@@ -6,7 +6,7 @@ Please, use this email for registering to all work related services. This is jus
 4. Send your GitHub and Zotero username and email to info@intbio.org . You will then get an invite to intbio organization and group on GitHub (https://github.com/intbio)  and Zotero - check your email and also account pages at Github and Zotero.
 5. For communications we use slack https://slack.com . Install it . Use this link to signup to a group workspace https://join.slack.com/t/intbiol/signup . You may also get an invitation to a relevant project channel if you plan to work on a specific project - so check you email.
 6. Likely you will also get an account on [newton.bioeng.ru](https://newton.bioeng.ru/jupyter) , which will be like j_smith
-7. Likely you will also get an account on Redmine https://newton.bioeng.ru/redmine/
+7. Likely you will also get an account on Notion. https://notion.so Register their and send info to info@intbio.org about your account to be added to pages.
 8. If you are doing experimental work, register on http://benchling.com . Send request to join "intbiogroup". Send email to info@intbio.org to request aproval. 
 9. Please, send any further qestions to the #helpdesk channel in Slack!
 
